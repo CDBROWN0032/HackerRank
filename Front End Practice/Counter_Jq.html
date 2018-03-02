@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script lang="javascript">
+		function Main() { // this function is started automaticall
+			$("#inp").val(number=0);
+		}
+		$().ready(function(){		
+			$("#up").click(function(){
+				number++; Display();
+			});
+			$("#down").click(function(){
+				number--; Display();	
+			});
+			function Display(){
+				$("#inp").val(number);
+			}
+		});		
+	</script>
+</head>
+<body OnLoad="Main()">
+	<button id="down">DOWN</button>
+	<input id="inp" type="text">
+	<button id="up">UP</button>
+</body>
+</html>
