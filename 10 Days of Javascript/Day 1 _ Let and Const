@@ -1,0 +1,15 @@
+function main() {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    const PI = Math.PI;
+    var r = readLine();
+
+    // Print the area of the circle:
+    function area(r){
+        return Math.pow(r,2)*PI;
+    }
+    // Print the perimeter of the circle:
+    function peri(r){
+        return 2*PI*r;
+    }
+    console.log(area(r));
+    console.log(peri(r));
