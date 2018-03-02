@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang = "en">
+<head>
+	<title>Counter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script lang="javascript">
+		var number = 0;
+		var inputCtrl;
+		function Main() { // this function is started automaticall
+			inputCtrl = document.getElementById("inp");
+			display();
+		}
+		
+		function Decrease(){
+			number = number - 1;
+			display();
+		}
+		function Increase(){
+			number = number + 1;
+			display();					
+		}
+		function display(){
+			inputCtrl.value = number;
+		}
+	</script>
+</head>
+<body OnLoad="Main()">
+	<button id="down" onclick=Decrease()>DOWN</button>
+	<input id="inp" type="text">
+	<button id="up" onclick=Increase()>UP</button>
+</body>
+</html>
