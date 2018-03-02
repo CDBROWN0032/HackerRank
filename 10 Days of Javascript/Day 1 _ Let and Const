@@ -1,5 +1,5 @@
 function main() {
-    git remote add origin https://github.com/CDBROWN0032/HackerRank-10-Days-of-Javascript.git
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
     const PI = Math.PI;
     var r = readLine();
 
